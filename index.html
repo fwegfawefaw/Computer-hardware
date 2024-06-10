@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Builder</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>PC Builder</h1>
-        <div class="parts">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PC Builder</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="container">
+      <h1>PC Builder</h1>
+      <div class="parts">
+      <div class="part">
+         <label for="cpu">CPU:</label>
+         <select id="cpu" class="dropdown">
+            <option value="0">Select CPU</option>
+            <option value="100">$100 - Intel Core i5</option>
+            <option value="200">$200 - Intel Core i7</option>
+            <option value="300">$300 - AMD Ryzen 5</option>
+            <option value="400">$400 - AMD Ryzen 7</option>
+         </select>
+      </div>
+      <div class="parts">
+      <div class="part">
+         <label for="gpu">GPU</label>
+         <select id="gpu" class="dropdown">
+            <option value="0">Select GPU</option>
+            <option value="100">$100 - Intel Core i5</option>
+            <option value="200">$200 - Intel Core i7</option>
+            <option value="300">$300 - AMD Ryzen 5</option>
+            <option value="400">$400 - AMD Ryzen 7</option>
+         </select>
+      </div>
+      <div class="parts">
+         <div class="part">
+            <label for="ram">RAM:</label>
+            <select id="ram" class="dropdown">
+               <option value="0">Select RAM</option>
+               <option value="100">$100 - Intel Core i5</option>
+               <option value="200">$200 - Intel Core i7</option>
+               <option value="300">$300 - AMD Ryzen 5</option>
+               <option value="400">$400 - AMD Ryzen 7</option>
+            </select>
+         </div>
+         <div class="parts">
             <div class="part">
-                <label for="cpu">CPU:</label>
-                <select id="cpu" class="dropdown">
-                    <option value="0">Select CPU</option>
-                    <option value="100">$100 - Intel Core i5</option>
-                    <option value="200">$200 - Intel Core i7</option>
-                    <option value="300">$300 - AMD Ryzen 5</option>
-                    <option value="400">$400 - AMD Ryzen 7</option>
-                </select>
+               <label for="motherboard">Motherboard:</label>
+               <select id="motherboard" class="dropdown">
+                  <option value="0">Select Motherboard</option>
+                  <option value="100">$100 - Intel Core i5</option>
+                  <option value="200">$200 - Intel Core i7</option>
+                  <option value="300">$300 - AMD Ryzen 5</option>
+                  <option value="400">$400 - AMD Ryzen 7</option>
+               </select>
             </div>
-            <!-- Repeat similar code for other parts -->
-            <!-- GPU, RAM, Motherboard, Cooling Fan, SSD, PC Box, Power Supply -->
-        </div>
-        <div class="total">
-            Total Cost: $<span id="totalCost">0</span>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+         </div>
+         <div class="total"> Total Cost: $ <span id="totalCost">0</span>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
 </html>
